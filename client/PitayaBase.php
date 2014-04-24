@@ -1,5 +1,5 @@
 <?php
-$GLOBALS['THRIFT_ROOT'] = __DIR__.'/../../thrift/lib/php/lib/Thrift';
+$GLOBALS['THRIFT_ROOT'] = __DIR__.'/thrift';
 require_once 'pitaya/Types.php';
 require_once 'pitaya/Pitaya.php';
 require_once $GLOBALS['THRIFT_ROOT'].'/Protocol/TProtocol.php';
