@@ -65,7 +65,7 @@ class Manager:
 		job = ServerJob(payload)
 		self.jobs.put(job.id, job)
 		self.enqueue(job)
-		self.debug('Job ' + str(job.id) + ' is received: ' + job.payload)
+		self.debug('Job ' + str(job.id) + ' is queued: ' + job.payload)
 		return job
 	def enqueue(self, job):
 		job.enqueue()
