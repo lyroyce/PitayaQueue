@@ -1,5 +1,5 @@
 <?php
-require_once __DIR__.'/../client/Worker.php';
+require_once __DIR__.'/base/Worker.php';
 
 Class SimpleWorker extends Worker {
 

@@ -1,9 +1,12 @@
 <?php
-require_once __DIR__.'/../client/Client.php';
+require_once __DIR__.'/base/Client.php';
 use pitaya\Status;
 
 $client = new Client('localhost', '9908');
-$client->connect();
+if(!$client->connect()){
+	echo "Failed to connect to server.\n";
+	exit;
+} 
 echo "Ready to queue a job...\n";
 $job=$client->queue('This is a test job from client');
 echo "The job is accepted by the server:\n";

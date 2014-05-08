@@ -1,5 +1,5 @@
 <?php
-$GLOBALS['THRIFT_ROOT'] = __DIR__.'/thrift';
+$GLOBALS['THRIFT_ROOT'] = __DIR__.'/../thrift';
 require_once 'pitaya/Types.php';
 require_once 'pitaya/Pitaya.php';
 require_once $GLOBALS['THRIFT_ROOT'].'/Protocol/TProtocol.php';
@@ -25,7 +25,7 @@ class PitayaBase {
 	protected $client;
 	protected $transport;
 	
-	public function __construct($host, $port, $socketTimeout = 60100) {
+	public function __construct($host, $port, $socketTimeout = 60000) {
 
 		$this->socket = new TSocket($host, $port);
 		if ($socketTimeout) {
