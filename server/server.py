@@ -3,7 +3,7 @@ import sys
 import PitayaServer
 
 if len(sys.argv) < 2:
-	print 'Usage: server.py [port] [maxInProgressJobAge] [maxDonJobAge] [debug]';
+	print 'Usage: server.py [port] [maxInProgressJobAge] [maxDoneJobAge] [debug]';
 	sys.exit(2)
 
 PitayaServer.start(*sys.argv[1:])
