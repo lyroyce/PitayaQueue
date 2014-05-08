@@ -1,7 +1,5 @@
 <?php
 $GLOBALS['THRIFT_ROOT'] = __DIR__.'/../thrift';
-require_once 'pitaya/Types.php';
-require_once 'pitaya/Pitaya.php';
 require_once $GLOBALS['THRIFT_ROOT'].'/Protocol/TProtocol.php';
 require_once $GLOBALS['THRIFT_ROOT'].'/Protocol/TBinaryProtocol.php';
 require_once $GLOBALS['THRIFT_ROOT'].'/Transport/TTransport.php';
@@ -14,6 +12,8 @@ require_once $GLOBALS['THRIFT_ROOT'].'/Type/TMessageType.php';
 require_once $GLOBALS['THRIFT_ROOT'].'/Factory/TStringFuncFactory.php';
 require_once $GLOBALS['THRIFT_ROOT'].'/StringFunc/TStringFunc.php';
 require_once $GLOBALS['THRIFT_ROOT'].'/StringFunc/Core.php';
+require_once __DIR__.'/../pitaya/Types.php';
+require_once __DIR__.'/../pitaya/Pitaya.php';
 
 use Thrift\Protocol\TBinaryProtocol;
 use Thrift\Transport\TSocket;
